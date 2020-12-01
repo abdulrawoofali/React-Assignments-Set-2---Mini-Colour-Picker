@@ -26,8 +26,10 @@ const title = 'Select the gradient and then the Box to change the color';
 const App = () => {
   let [nextBackground, selectNextBackground] = useState({ nextBackground: "" })
   const applyColor = (updateSelectionStyle) => {
-    updateSelectionStyle(nextBackground)
+    //console.log(updateSelectionStyle);
+    updateSelectionStyle(nextBackground);
   }
+
 
   return (
     <div id="master">
